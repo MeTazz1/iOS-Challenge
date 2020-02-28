@@ -36,10 +36,6 @@ struct HomeView: View {
                         .pickerStyle(SegmentedPickerStyle())
                 }
                 
-                VStack(alignment: .leading) {
-                    Text("Search")
-                }
-                
                 // Parsing ViewModel's data to create UI
                 ForEach(self.homeViewModel.contentData) { contentDataRow in
                     // Filters helping to find out if this row should be displayed or not
